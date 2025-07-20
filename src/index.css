@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background: #18191a;
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,92 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Simulation control buttons - eye catching gradients and hover effects */
+.sim-btn {
+  padding: 10px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin: 0 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.sim-btn.start {
+  background: linear-gradient(90deg, #00fff7 0%, #00bfff 100%);
+  color: #222;
+  box-shadow: 0 2px 8px rgba(0,255,247,0.2);
+}
+.sim-btn.start:hover {
+  background: linear-gradient(90deg, #00bfff 0%, #00fff7 100%);
+  color: #111;
+}
+
+.sim-btn.pause {
+  background: linear-gradient(90deg, #ff6a00 0%, #ffb347 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255,106,0,0.2);
+}
+.sim-btn.pause:hover:enabled {
+  background: linear-gradient(90deg, #ffb347 0%, #ff6a00 100%);
+  color: #fff;
+}
+
+.sim-btn.play {
+  background: linear-gradient(90deg, #ff00cc 0%, #333399 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255,0,204,0.2);
+}
+.sim-btn.play:hover:enabled {
+  background: linear-gradient(90deg, #333399 0%, #ff00cc 100%);
+  color: #fff;
+}
+
+.sim-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* Remove Leaflet popup default background, border, and shadow */
+.leaflet-popup-content-wrapper {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.leaflet-popup-tip-container,
+.leaflet-popup-tip {
+  display: none !important;
+}
+
+.leaflet-popup {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Fix Leaflet popup close button alignment for custom popup */
+.leaflet-popup-close-button {
+  position: absolute !important;
+  top: 18px !important;
+  right: 2px !important;
+  font-size: 24px !important;
+  color: #00bcd4 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 10;
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #e91e63 !important;
+  opacity: 1;
 }
