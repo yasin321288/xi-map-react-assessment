@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../style/VehiclePopup.css';
 const VehiclePopup = () => (
   <div className="vehicle-popup">
     <div className="vehicle-popup-header">
