@@ -90,7 +90,7 @@ const Map = () => {
       <MapContainer
         center={routeCoordinates[0]}
         zoom={14}
-        style={{ height: '1200px', width: '100%' }}
+        style={{ height: '500px', width: '100%' }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
