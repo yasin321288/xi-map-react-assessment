@@ -9,10 +9,10 @@ function App() {
        <h1 style={{
         textAlign: 'center',
         color: '#2bd3caff',
-        margin: '24px 0 16px 0',
+        margin: '12px 0 12px 0',
         fontWeight: 'bold',
         letterSpacing: '1px',
-        fontSize: '2rem'
+        fontSize: '1.5rem'
       }}>Vehicle Movement on a Map</h1>
       <Map />
     </div>
