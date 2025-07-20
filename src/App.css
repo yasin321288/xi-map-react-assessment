@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .map-container {
+    height: 70vh; /* Adjust map height for mobile */
+  }
+  
+  .control-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .control-buttons button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
